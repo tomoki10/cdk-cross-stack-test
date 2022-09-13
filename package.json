@@ -1,8 +1,8 @@
 {
-  "name": "cross_stack_test",
+  "name": "cross-stack-test",
   "version": "0.1.0",
   "bin": {
-    "cross_stack_test": "bin/cross_stack_test.js"
+    "cross-stack-test": "bin/cross-stack-test.js"
   },
   "scripts": {
     "build": "tsc",
@@ -11,17 +11,17 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.77.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "1.77.0",
+    "aws-cdk-lib": "2.41.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.77.0",
+    "aws-cdk-lib": "2.41.0",
+    "cdk": "2.41.0",
     "source-map-support": "^0.5.16"
   }
 }

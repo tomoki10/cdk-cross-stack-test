@@ -1,14 +1,5 @@
-# Welcome to your CDK TypeScript project!
+# AWS CDK Cross Stack Reference Sandbox
 
-This is a blank project for TypeScript development with CDK.
+AWS CDK の props 渡しによるクロススタック参照を検証するためのソースコードです。詳細は以下の記事を参照。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+[AWS CDK の Props 渡しのクロススタック参照で起きる問題と対処方法](https://dev.classmethod.jp/etc/aws-cdk-props-cr…oblem-and-handle/)
