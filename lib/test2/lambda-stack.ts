@@ -22,6 +22,9 @@ export class LambdaStack extends cdk.Stack {
     });
     props.restApi.root.addMethod("GET", new apigateway.LambdaIntegration(stackCrossTest));
     props.restApi.root.addMethod("POST", new apigateway.LambdaIntegration(stackCrossTest2));
+    // 擬似的なOutputsの作成(CDK v1.90.1以降);
+    this.exportValue(stackCrossTest.functionArn);
+
     // 擬似的なOutputsの作成(一個目の関数の擬似Output);
     //
     // cdk.outに生成されたCfnテンプレートの以下のようなOutputsを確認して偽装する

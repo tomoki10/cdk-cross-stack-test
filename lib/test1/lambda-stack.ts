@@ -33,6 +33,9 @@ export class LambdaStack extends cdk.Stack {
     });
     this.lambdaA = stackCrossTest;
     this.lambdaB = stackCrossTest2;
+    // 擬似的なOutputsの作成(CDK v1.90.1以降);
+    this.exportValue(stackCrossTest.functionArn);
+
     // 擬似的なOutputsの作成;
     // 1個目のLambdaのOutputを偽装する
     new cdk.CfnOutput(this, "ExportsOutputFnGetAttStackCrossTestFunctionXXXXXXXXXXXXXXXXXXX", {
